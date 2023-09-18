@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <style>
+        form {
+            border: 3px solid blue;
+            display: flex;
+            justify-content: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: rgb(22, 216, 15);
+            border-radius: 10%;
+        }
+        #button {
+            width: 50%;
+            height: 30px;
+            background-color: rgb(233, 136, 92);
+        }
+        table{
+            padding: 3%;
+        }
+        th,td{
+            padding: 1%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1> 
+    <form>
+        <table>
+
+            <tr>
+                <th><label for="name"> Fullname:</label></th>
+                <td><input type="text" name="bonita" id="name"></td>
+            </tr>
+            <tr>
+                <th><label for="eamil"> Email:</label></th>
+                <td><input type="email" name="" id="email"></td>
+                
+            </tr>
+            <tr>
+                <th><label for="password"> Password:</label></th>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+                <tr>
+                    <th><label for="phone number"> Phone Number:</label></th>
+                    <td><input type="number" name="number" id="phone number"></td>
+                </tr>
+                <tr>
+                    <th><label for="date"></label> Date:</th>
+                    <td><input type="date" name="date" id="date" style="width: 170px;"></td>
+                </tr>
+                <tr>
+                    <th>What's your annual salary?:</th>
+                    <td><textarea name="infinite" id="massage" style="width:170px; height: 100px;"></textarea></td>
+                </tr>
+                <tr>
+                    <th>GENDER:</th>
+                    <td>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female"> Female:</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male"> Male:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>What is your occupation status?:</th>
+                    <td>
+                        <input type="checkbox" name="status" id="occupation">
+                        <label for="occupation"> Student:</label>
+                        <input type="checkbox" name="status" id="occupation">
+                        <label for="checkbox"> Employed:</label>
+                        <input type="checkbox" name="status" id="occupation">
+                        <label for="occupation"> Unemployed</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="submit" id="button"></th>
+                </tr>
+        </table>
+    </form>   
+</body>
+</html>
